@@ -695,7 +695,13 @@ flex-direction: column;
 }
 .project-heading{
   text-align: center;
-  background-color: rgb(249, 248, 246);
+  /* background-color: rgb(249, 248, 246); */
+  background-color: rgb(116, 115, 113);
   padding-top: 15px;
   padding-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white
 }
