@@ -66,11 +66,13 @@
 
 <div class="about" id="section0">
   <div class="div1">
-    <h1>Hello</h1>
-    <h1>I'm <span class="auto-type"></span></h1>
-    <p>a computer science student at KLS GIT ,With excellent problem solving skills and ability
-      to perform well in a team ,passionate about coding</p>
-
+    <h1>Hi, My name is Ganesh
+      and I am a passionate</h1>
+    <h1><span class="auto-type"></span></h1>
+    <!-- <p>I'm a computer science student at KLS GIT ,With excellent problem solving skills and ability
+      to perform well in a team, passionate about coding.</p> -->
+      <span class="ress "><a href="Ganesh_resume-Final.pdf" download="Ganesh-Resume.pdf"><button id="res" class="btn btn-outline-info" type="button">Download Resume </button></a>
+        <a href="#foot" ><button id="res" class="btn btn-outline-info" type="button">About Me ↓</button></a></span>
   </div>
   <div class="div2">
     <img src="ganu.png" alt="No photo" height="400px">
@@ -92,16 +94,16 @@
   </div>
   <div class="card" data-aos="fade-left">
     <h1>
-      Maratha Mandal's PU college
+      Maratha Mandal's PU College
     </h1>
-    <p>Passed out 12th on july 2021</p>
+    <p>Passed out 12th on July 2021</p>
     <div class="percentage">
       <h3>Percentage- 97.16</h3>
     </div>
   </div>
   <div class="card" data-aos="fade-left">
     <h1>KLS Gogte Institute of Technology</h1>
-    <p>Pursuing B.E. 2nd Year in computer Science </p>
+    <p>Pursuing B.E. 2nd Year in Computer Science </p>
     <div class="percentage">
       <h3>CGPA - 9.58</h3>
     </div>
@@ -138,7 +140,7 @@
       <h4>Data visualization tools - 70%</h4>
       <span class="bar"><span class="data"></span></span>
     </li>
-    <div id="cv">
+    <!-- <div id="cv">
       <div class="card" data-aos="fade-left">
         <h2>Download CV</h2>
         <div class="percentage">
@@ -146,7 +148,7 @@
             <h4>DOWNLOAD</h4>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
@@ -158,7 +160,7 @@
   <h1>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h1>
   <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px">
 </div>
-<div class="projects"> 
+<!-- <div class="projects"> 
   
   <div class="project1" data-aos="fade-left">
     <h3>Responsive : Calculator</h3>
@@ -189,6 +191,13 @@
         <h4>Click Here</h4>
       </a>
     </div>
+</div> -->
+<div class="projects" >
+  <div id="dan1" class="danger1"><img src="danger.png" width="150px"> </div>
+
+  <button type="button" id="invalid" class="btn btn-primary btn-lg" width="250px" >Click to see projects </button>
+ 
+  <div id="dan" class="danger"><img src="danger.png" width="150px"> </div>
 </div>
 
 
@@ -224,13 +233,13 @@
 </div>
 
 </div>
-<div class="footer">
+<div class="footer" id="foot">
   <div class="fot-sec" data-aos="fade-left">
     <h2>About Me</h2>
     <p>
       I'm
-      a computer science student at KLS GIT ,With excellent problem solving skills and ability to perform well in a
-      team ,passionate about coding
+      a Computer Science student at KLS GIT, with excellent problem solving skills and ability to perform well in a
+      team, passionate about coding.
     </p>
   </div>
 
@@ -279,7 +288,7 @@
       Have a Question ?</h2>
     <p><i class="fa-sharp fa-solid fa-location-dot"></i> - Belgaum, Karnataka</a></p>
     <p><i class="fa-solid fa-phone"></i> <a href="tel: +91 7204917202">- 7204917202</a></p>
-    <p><i class="fa-sharp fa-solid fa-envelope"></i> - gneshkugaji@gmail.com</p></a></p>
+    <p><i class="fa-sharp fa-solid fa-envelope"></i> - <a href="mailto:gneshkugaji@gmail.com">gneshkugaji@gmail.com</a></p>
   </div>
 
 </div>
@@ -294,7 +303,7 @@
 <script>
   var typed = new Typed(".auto-type",
     {
-      strings: ["Ganesh", "a Programer", " a Frontend developer", " a Coder"],
+      strings: [  "Programmer", "Frontend Developer","Web Designer", "Coder"],
       typeSpeed: 150,
       backspeed: 150,
       loop: true
@@ -327,6 +336,18 @@
     );
   }
 </script>
+
+
+
+  <script>
+    const element = document.getElementById("invalid");
+    element.addEventListener("click", function() {
+    document.getElementById("invalid").innerHTML = "Sorry !! You don't have any access to see Ganesh's Projects ";
+    document.getElementById("dan").style.display="block"
+    document.getElementById("dan1").style.display="block"
+    });
+  </script>
+
 </body>
 
 </html>
